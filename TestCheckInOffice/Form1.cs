@@ -32,17 +32,7 @@ namespace TestCheckInOffice
 
             try
             {
-                DialogResult ans = MessageBox.Show("確定匯入資料?", "訊息視窗",
-                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (ans == DialogResult.OK)
-                {
                     ImportFile();
-                }
-                else
-                {
-                    return;
-                }
-
             }
             catch (Exception ex)
             {
